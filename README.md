@@ -5,6 +5,7 @@ I have been using SurveyGizmo since the middle of 2014. One night I was working 
 ##Table of Contents
 - [Short Scripts](/short-scripts/)
   - [Javascript - Store Number Validation](/short-scripts/store-number-validation.md)
+  - [Javascript - Store Code Validation](/short-scripts/store-code-validation.md)
   
   
   
