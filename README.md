@@ -3,7 +3,7 @@
 This is my personal collection of scripts that I have put together for SurveyGizmo
 
 ##Table of Contents
-- Short Scripts
-  - Javascript - Store Number Validation
+- [Short Scripts](/short-scripts/)
+  - [Javascript - Store Number Validation](/short-scripts/store-number-validation.md)
   
   
