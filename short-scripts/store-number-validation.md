@@ -1,11 +1,12 @@
 ####Store Number Validation
-######Written By jhayslett
+#####Written By jhayslett
 ___
 ####Purpose
 To validate a field that had 2 digits in it. This value was also being used to create an email, so the number had to be 2 digits. This meant if the number was a single digit (1-9), then it needed to append a leading 0; ex: 01,02,03...
 
 ####SG Features
 On the input field I used the following RegEx  **^\d{2}$**
+
 > **(Regex Breakdown)**      
 > ^ - begin the regex string  
 > \d - counts a digit  
