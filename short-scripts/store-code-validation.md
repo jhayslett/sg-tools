@@ -4,10 +4,14 @@
 ___  
 ####Purpose  
 To validate a text input field that needs to contain 3 letters, any combination, along with 1 optional w at the end. This code also needs to be all uppercase letters.  
+
 ####Thought Process  
+
 1. Use javascript and jquery to watch a text input field, so when the value changes it will adjust to all uppercase letters.
 2. Use regex to validate the value of the text input field on submission to ensure it starts with 3 characters, A-Z, along with a 4th optional character, W. Also the Regex ensures all characters are uppercase on submission. This can be seen as optional step since the previous step is already changing it to fully meet the validation, but I use it to be safe. If the previous step is working, then this step should validate properly.  
-##Javascript Action
+
+####Javascript Action
+
 Insert a Javascript Action at the end of the page containing the text input field that you would like to perform this step of the validation.
 ```javascript
   $("**input-selector**").change(function () {  
@@ -15,7 +19,8 @@ Insert a Javascript Action at the end of the page containing the text input fiel
     }  
   })  
 ```
-##Regex  
+
+####Regex  
 Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[W]{0,1}$**  
 ```  
 ^ - begin the regex string  
