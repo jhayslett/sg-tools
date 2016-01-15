@@ -14,7 +14,7 @@ On the input field I used the following RegEx  **^\d{2}$**
 
 ####Code
 This code should be inserted at the end of the page containing the text input field that you would like to use this on.
-```
+```javascript
  $("**input-selector**").change(function(){  // insert your selector for the text input field in the bold  
 	  var $input = $(this).val();  
 	  if ( $input >= 1 && $input <= 9) {  
