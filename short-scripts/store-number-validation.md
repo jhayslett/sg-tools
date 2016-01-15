@@ -1,4 +1,4 @@
-####Store Number Validation
+###Store Number Validation
 #####Written By jhayslett
 ___
 ####Purpose
@@ -7,11 +7,13 @@ To validate a field that had 2 digits in it. This value was also being used to c
 ####SG Features
 On the input field I used the following RegEx  **^\d{2}$**
 
-> **(Regex Breakdown)**      
-> ^ - begin the regex string  
-> \d - counts a digit  
-> {2} - counts how many of the previous statement  
-> $ - end the regex string
+#####Regex Breakdown
+```regex
+^ - begin the regex string  
+\d - counts a digit  
+{2} - counts how many of the previous statement  
+$ - end the regex string
+```
 
 ####Code
 This code should be inserted at the end of the page containing the text input field that you would like to use this on.
