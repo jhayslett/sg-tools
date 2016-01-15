@@ -10,7 +10,7 @@ To validate a text input field that needs to contain 3 letters, any combination,
 ##Javascript Action
 Insert a Javascript Action at the end of the page containing the text input field that you would like to perform this step of the validation.
 ```javascript
-  $("**input-selector**).change(function() {  
+  $("**input-selector**").change(function () {  
     $(this).value = $(this).value.toUpperCase();  
     }  
   })  
