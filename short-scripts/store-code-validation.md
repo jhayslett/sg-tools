@@ -8,7 +8,7 @@ To validate a text input field that needs to contain 3 letters, any combination,
 ####Thought Process  
 
 1. Use javascript and jquery to watch a text input field, so when the value changes it will adjust to all uppercase letters.
-2. Use regex to validate the value of the text input field on submission to ensure it starts with 3 characters, A-Z, along with a 4th optional character, W. Also the Regex ensures all characters are uppercase on submission. This can be seen as optional step since the previous step is already changing it to fully meet the validation, but I use it to be safe. If the previous step is working, then this step should validate properly.  
+2. Use regex to validate the value of the text input field on submission to ensure it starts with 3 characters, A-Z, along with a 4th optional character, W. We will set the regex so it also double checks to make sure the value is all uppercase letters.
 
 ####Javascript Action
 
