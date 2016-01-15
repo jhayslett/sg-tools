@@ -3,7 +3,7 @@
 #####Last Updated: 01/14/2016  
 ___  
 ####Purpose  
-To validate a text input field that needs to contain 3 letters, any combination, along with 1 optional w at the end. This code also needs to be all uppercase letters.  
+To validate a text input field that needs to contain 3 letters, any combination, along with 1 optional w at the end. This value also needs to be all uppercase letters.  
 
 ####Thought Process  
 
