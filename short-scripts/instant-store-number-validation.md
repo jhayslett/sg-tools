@@ -13,7 +13,7 @@ To change the value of the Store Number input field to match specific formatting
 ####Javascript Action
 Insert a Javascript Action at the end of the page containing the text input field that you would like to perform this step of the validation.
 ```javascript
-$('input selecter').change(function(){  // insert your selector for the text input field in the bold
+$('input selector').change(function(){  // insert your selector for the text input field in the bold
   var input = $(this).val();
   input = input.replace(/ /g,'').replace(/[^a-z0-9\s]/gi, '');
   var region = input.substring(0,3).toUpperCase();
@@ -27,6 +27,15 @@ $('input selecter').change(function(){  // insert your selector for the text inp
   $(this).val(region+" "+number);
 })
 ```  
+
+**Parameters need to edit**
+
+$('input selector') - You will need to add a CSS Class Name to the Text Input Field you would like to apply this formatting to. To do so you will need to:
+  1. Access the Question Properties Panel
+  2. Navigate to Layout and add "store" to CSS Class Name
+  3. Edit the $('input selector') in your JavaScript. If you use "store" in the previous step, you will use the following selector: $('.store input').
+
+
 ####Regex  
 Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **[A-Z]{3}[WZAHXN ]?\d{2}**  
 ```  
