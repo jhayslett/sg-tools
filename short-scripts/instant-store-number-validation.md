@@ -22,18 +22,19 @@ $('input selecter').change(function(){  // insert your selector for the text inp
   if(number >= 1 && number <= 9) {
   	if($long == "1") {
     	number = "0"+number;  
-    }
+}
   }
   $(this).val(region+" "+number);
 })
 ```  
 ####Regex  
-Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[WZAHXN ]?\d{2}$**  
+Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **[A-Z]{3}[WZAHXN ]?\d{2}**  
 ```  
+Full Regex Statement - ^[A-Z]{3}[WZAHXN ]?\d{2}$
 ^ - begin the regex string  
 [A-Z] - counts each Uppercase Character A through Z  
 {3} - counts how many of the previous statement  
-[WZAHXN ] - counts each Uppercase W  
+  [WZAHXN ] - counts each Uppercase W  
 ? - allows for 0 or 1 of one of the characters in the previous statement
 \d - count each integer
 {2} - counts how many of the previous statement
