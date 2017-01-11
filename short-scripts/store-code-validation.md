@@ -21,12 +21,14 @@ Insert a Javascript Action at the end of the page containing the text input fiel
 ```
 
 ####Regex  
-Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[W]{0,1}$**  
+Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[WZAHXN ]?\d{2}$**  
 ```  
 ^ - begin the regex string  
 [A-Z] - counts each Uppercase Character A through Z  
 {3} - counts how many of the previous statement  
-[W] - counts each Uppercase W  
-{0,1} - counts how many of the previous statement and allows for either 0 or 1 which makes this portion optional  
+[WZAHXN ] - counts each Uppercase W  
+? - allows for 0 or 1 of one of the characters in the previous statement
+\d - count each integer
+{2} - counts how many of the previous statement
 $ - end of the regex string  
 ```  
