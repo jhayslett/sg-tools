@@ -30,7 +30,7 @@ $('input selector').change(function(){  // insert your selector for the text inp
 
 **Parameters need to edit**
 
-$('input selector') - You will need to add a CSS Class Name to the Text Input Field you would like to apply this formatting to. To do so you will need to:
+**$('input selector')** - You will need to add a CSS Class Name to the Text Input Field you would like to apply this formatting to. To do so you will need to:
   1. Access the Question Properties Panel
   2. Navigate to Layout and add "store" to CSS Class Name
   3. Edit the $('input selector') in your JavaScript. If you use "store" in the previous step, you will use the following selector: $('.store input').
