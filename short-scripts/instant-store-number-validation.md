@@ -1,6 +1,6 @@
 ###Instant Store Number Validation
 #####Written By jhayslett
-#####Last Updated: 02/03/2016
+#####Last Updated: 01/11/2017
 ___
 ####Purpose
 To change the value of the Store Number input field to match specific formatting. 
