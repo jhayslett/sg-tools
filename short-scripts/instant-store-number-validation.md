@@ -43,7 +43,7 @@ Full Regex Statement - ^[A-Z]{3}[WZAHXN ]?\d{2}$
 ^ - begin the regex string  
 [A-Z] - counts each Uppercase Character A through Z  
 {3} - counts how many of the previous statement  
-  [WZAHXN ] - counts each Uppercase W  
+[WZAHXN ] - counts each Uppercase W  
 ? - allows for 0 or 1 of one of the characters in the previous statement
 \d - count each integer
 {2} - counts how many of the previous statement
