@@ -37,7 +37,7 @@ $('input selector').change(function(){  // insert your selector for the text inp
 
 
 ####Regex  
-Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **[A-Z]{3}[WZAHXN ]?\d{2}**  
+Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[WZAHXN ]?\d{2}$**  
 ```  
 Full Regex Statement - ^[A-Z]{3}[WZAHXN ]?\d{2}$
 ^ - begin the regex string  
