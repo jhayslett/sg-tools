@@ -50,13 +50,11 @@ function update(){
 function addInputFields(a){
   var items = document.querySelectorAll(".phoneNumber input[type=text]");
   var itemAmount = items.length;
-  console.log(items);
-  console.log(itemAmount);
-  	for(var i = 0; i < itemAmount; i++){
-      if(a) {
-        items[i].removeEventListener("change",update)
-      }
-		items[i].addEventListener("change",update)
+  for(var i = 0; i < itemAmount; i++){
+  	if(a) {
+  	items[i].removeEventListener("change",update)
+	}
+	items[i].addEventListener("change",update)
 	}
 }
 
