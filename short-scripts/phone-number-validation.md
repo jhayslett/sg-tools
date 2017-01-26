@@ -23,7 +23,7 @@ To change the value of the Phone Number input field(s) to match a specific forma
 3. Insert the following RegEx in the field that appears: ^(\d{3})?[-]?\d{3}[-]?\d{4}$  
 (A deeper dive down of the RegEx is supplied below).
 4. Make sure to insert a message in the "Message to display when answer does not pass RegEx" such as, "Please insert phone number as 480-606-6000".
-5. Access Question Properties - Layout - CSS Class Name and set add "phoneNumber".
+5. While in Question Properties, navigate to Layout - CSS Class Name and add "phoneNumber".
 
 ####Javascript Action
 Insert a JavaScript action at the end of the page that the phone number text input field will live.
@@ -65,6 +65,19 @@ document.addEventListener("DOMContentLoaded",addInputFields);
 document.addEventListener("change",addInputFields(true))
 ```
 
-**Parameters need to edit**
-
 ####Regex  
+Full Regex Statement - ^([0-9]{3})?[-]?[0-9]{3}[-]?[0-9]{4}$
+^ - begin the regex string  
+[0-9] - counts each digit  
+{3} - counts how many of the previous statement  
+()? - allows for 0 or 1 of one of the characters in the previous statement, since the previous statement lives inside the parenthesis it allows 0 or 1 of the 3 digits
+[-] - checks for a dash character
+? - allows for 0 or 1 of one of the characters in the previous statement
+[0-9] - counts each digit  
+{3} - requires 3 of the previous statement
+[-] - checks for a dash character
+? - allows for 0 or 1 of one of the characters in the previous statement
+[0-9] - counts each digit  
+{4} - requires 4 of the previous statement
+$ - end of the regex string  
+```  
