@@ -66,18 +66,18 @@ document.addEventListener("change",addInputFields(true))
 ```
 
 ####Regex  
-Full Regex Statement - ^([0-9]{3})?[-]?[0-9]{3}[-]?[0-9]{4}$
-^ - begin the regex string  
-[0-9] - counts each digit  
-{3} - counts how many of the previous statement  
-()? - allows for 0 or 1 of one of the characters in the previous statement, since the previous statement lives inside the parenthesis it allows 0 or 1 of the 3 digits
-[-] - checks for a dash character
-? - allows for 0 or 1 of one of the characters in the previous statement
-[0-9] - counts each digit  
-{3} - requires 3 of the previous statement
-[-] - checks for a dash character
-? - allows for 0 or 1 of one of the characters in the previous statement
-[0-9] - counts each digit  
-{4} - requires 4 of the previous statement
-$ - end of the regex string  
+Full Regex Statement - ^([0-9]{3})?[-]?[0-9]{3}[-]?[0-9]{4}$  
+^ - begin the regex string    
+[0-9] - counts each digit    
+{3} - counts how many of the previous statement    
+()? - allows for 0 or 1 of one of the characters in the previous statement, since the previous statement lives inside the parenthesis it allows 0 or 1 of the 3 digits  
+[-] - checks for a dash character  
+? - allows for 0 or 1 of one of the characters in the previous statement  
+[0-9] - counts each digit    
+{3} - requires 3 of the previous statement  
+[-] - checks for a dash character  
+? - allows for 0 or 1 of one of the characters in the previous statement  
+[0-9] - counts each digit    
+{4} - requires 4 of the previous statement  
+$ - end of the regex string    
 ```  
