@@ -4,10 +4,14 @@
 ___
 ####Purpose
 To change the value of the Phone Number input field to match a specific formatting.  
-**Example**  
-661-979-1234  
-OR  
-979-1234  
+
+####Examples
+| User Input |Value Returned|
+|------------|--------------|
+| 12345467   | 123-4567     |
+| 1234567890 | 123-456-7890 |
+| 333        | Not Accepted |
+| 555555     | Not Accepted |
 
 ####Thought Process  
 1. Use JavaScript to oversee all text input fields that require a phone number. When the value changes, make it a specific formatting with dashes to provide clean reporting with consistent formatting.  
