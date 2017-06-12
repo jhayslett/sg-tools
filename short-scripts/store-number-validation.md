@@ -1,16 +1,16 @@
-###Store Number Validation
-#####Written By jhayslett
-#####Last Updated: 01/25/2017
+### Store Number Validation
+##### Written By jhayslett
+##### Last Updated: 01/25/2017
 ___
-####Purpose
+#### Purpose
 To change the value of the Store Number input field to match specific formatting. 
 
-####Thought Process
+#### Thought Process
 
 1. Use javascript and jquery to watch a text input field so when the value changes it will adjust to have 3 capital region number with a space and 2 digits proceeding.
 
 
-####Javascript Action
+#### Javascript Action
 Insert a Javascript Action at the end of the page containing the text input field that you would like to perform this step of the validation.
 ```javascript
 $('input selector').change(function(){  // insert your selector for the text input field in the bold
@@ -36,7 +36,7 @@ $('input selector').change(function(){  // insert your selector for the text inp
   3. Edit the $('input selector') in your JavaScript. If you use "store" in the previous step, you will use the following selector: $('.store input').
 
 
-####Regex  
+#### Regex  
 Access the Question Properties Panel for the Textbox Input Field you would like to validate. Inside the panel, navigate to Validation and set Answer Format to RegEx with the following statement: **^[A-Z]{3}[WZAHXN ]?\d{2}$**  
 ```  
 Full Regex Statement - ^[A-Z]{3}[WZAHXN ]?\d{2}$
